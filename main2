@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+
+
+void main(){
+  runApp(
+    MaterialApp(
+      theme: ThemeData.dark(),
+      
+    home: Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(13, 210, 55, 0.904),
+        
+        leading: const Row(
+          children: [
+            SizedBox(
+              width: 20,
+              
+            ),
+            Icon(Icons.search),
+          ],
+        ),
+          title: const Text('Youtube',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(255, 185, 24, 24), backgroundColor: Color.fromARGB(247, 25, 25, 183)),),
+          actions: const [
+            Icon(Icons.search),
+            Icon(Icons.video_call),
+            Icon(Icons.add),
+          ],
+
+
+  ),
+  body: const Column(
+    children: [
+      Text(
+        "first child",
+        style: TextStyle(fontSize: 50),
+      ),
+      Text(
+        "second child",
+        style: TextStyle(fontSize: 50),
+      ),
+      Row(
+        children: [
+          Text(
+        "forth child",
+        style: TextStyle(fontSize: 50),
+      ),
+      Text(
+        "forth child",
+        style: TextStyle(fontSize: 50),
+      ),
+
+        ],
+        
+      )
+      
+    ],
+  ),)
+  )
+  );
+}
+
